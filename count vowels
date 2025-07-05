@@ -7,3 +7,13 @@ for char in text:      # Examine each character in the text
         count += 1     # If yes, increment counter
 
 print(f"Vowel count: {count}")  # Print result (output: 4)
+
+
+
+
+text = "Hello beautiful pepole"
+vowels = "aeiouAEIOU"
+
+vowel_count = len(list(filter(lambda char: char in vowels, text)))
+
+print(f"Number of vowel is: {vowel_count}")
