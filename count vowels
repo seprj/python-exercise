@@ -1,0 +1,9 @@
+vowels = "aeiouAEIOU"  # Define all vowel characters (lowercase and uppercase)
+text = "Hello Python"  # The text to analyze
+count = 0              # Initialize vowel counter
+
+for char in text:      # Examine each character in the text
+    if char in vowels: # Check if character is a vowel
+        count += 1     # If yes, increment counter
+
+print(f"Vowel count: {count}")  # Print result (output: 4)
