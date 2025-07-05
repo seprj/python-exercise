@@ -1,0 +1,7 @@
+jokes = [
+"Why did the computer get sick? Because it had a virus!",
+"The book said to the book: Let's have a race! The book said: I don't have a page!",
+"Why did the scarecrow win a medal? Because he was a master at his job!"
+]
+
+print(random.choice(jokes))
