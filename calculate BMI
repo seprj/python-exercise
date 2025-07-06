@@ -11,3 +11,25 @@ else:
     status = "Overweight"
 
 print(f"Your BMI : {bmi:.1f} ({status})")
+================================================================================================================
+
+def calculate_bmi(weight, height):
+  if height <= 0:
+    raise ValueError("Height must be greater than zero")
+  return weight / (height ** 2)
+
+try:
+    weight = float(input("Weight (kg): "))
+    height = float(input("Height (m): "))
+    bmi = calculate_bmi(weight, height)
+
+    if bmi < 18.5:
+        status = "Underweight"
+    elif 18.5 <= bmi < 25:
+        status = "Normal"
+    else:
+        status = "Overweight"
+
+    print(f"Your BMI : {bmi:.1f} ({status})")
+except ValueError as e:
+  print(f"Error: {e}")
